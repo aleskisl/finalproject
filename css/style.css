@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/EduAUVICWANTGuides-Bold.ttf");
+}
+body {
+  font-family: Arial;
+  margin: 20px;
+  color: #383434;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid #b86b77 4px;
+  padding: 20px;
+  background-color: #F6CFCA;
+}
+
+header {
+  font-family: "custom";
+  font-size: 40px;
+  color: #b86b77;
+}
+
+#rules {
+  border: dashed #b86b77 2px;
+  border-radius: 70px;
+  margin-bottom: 20px;
+  background-color: #FFE5EC;
+}
+#rules h3 {
+  text-decoration: underline;
+}
+#rules p {
+  padding: 10px;
+}
+
+.winner {
+  background-color: lightgreen;
+}
+
+.loser {
+  background-color: red;
+}
+
+.tie {
+  background-color: #b86b77;
+}
+
+#currentgamesection {
+  border: dashed #b86b77 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE5EC;
+}
+#currentgamesection #buttondiv {
+  padding: 30px;
+}
+#currentgamesection #buttondiv h3 {
+  font-size: 30px;
+}
+#currentgamesection button {
+  background-color: #b86b77;
+  border: solid #000 2px;
+  border-radius: 60px;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px #383434;
+}
+#currentgamesection #resetbutton, #currentgamesection #declarewinner {
+  display: none;
+}
+
+h2, h3 {
+  text-decoration: underline;
+}
+
+#currentgameinformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#currentgameinformation div {
+  width: 50%;
+}
+#currentgameinformation #player {
+  border-left: solid #b86b77 3px;
+}
+#currentgameinformation #playerdice, #currentgameinformation #computerdice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#currentgameinformation #playerdice img, #currentgameinformation #computerdice img {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#currentgameinformation #playerdice img img, #currentgameinformation #computerdice img img {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 750px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  body {
+    border: none;
+  }
+}

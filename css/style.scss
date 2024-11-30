@@ -1,0 +1,133 @@
+$lightpink: #FFE5EC;
+$middlepink: #F6CFCA;
+$darkpink: #b86b77;
+$gold: #D4AF37;
+$black: #000;
+$grey: #383434;
+
+$small: 550px;
+$medium: 750px;
+$large: 800px;
+
+//change the width and height of the pictures on page
+@mixin changeimgsize($width){
+    img {
+        width: $width;
+        height: $width;
+    }
+}
+
+@font-face {
+    font-family: 'custom';
+    src: url('../fonts/EduAUVICWANTGuides-Bold.ttf');
+}
+
+body {
+    font-family: Arial;
+    margin: 20px;
+    color: $grey;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid $darkpink 4px;
+    padding: 20px;
+    background-color: $middlepink;
+}
+
+header {
+    font-family: 'custom';
+    font-size: 40px;
+    color:$darkpink;
+}
+
+#rules {
+    border: dashed $darkpink 2px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    background-color: $lightpink;
+
+    h3 {
+        text-decoration: underline;
+    }
+    p {
+        padding: 10px;  
+    }
+}
+.winner {
+    background-color: lightgreen;
+}
+.loser {
+    background-color: red;
+}
+.tie {
+    background-color: $darkpink;
+}
+#currentgamesection {
+    border: dashed $darkpink 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: $lightpink;
+
+    #buttondiv {
+    padding: 30px;
+    h3{
+        font-size: 30px;
+    }
+    }
+    button {
+        background-color: $darkpink;
+        border: solid $black 2px;
+        border-radius: 60px;
+        padding: 10px;
+        font-size: 20px;
+        box-shadow: 2px 2px $grey;
+    }
+    #resetbutton , #declarewinner{
+        display: none;
+    }
+    
+}
+h2, h3 {
+    text-decoration: underline;
+}
+#currentgameinformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    div {
+        width: 50%;
+    }
+
+    #player {
+        border-left: solid $darkpink 3px;
+    }
+
+    #playerdice, #computerdice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width:100%;
+
+        img {
+            border: 1px solid $black;
+            border-radius: 10px;
+            margin-bottom: 20px;
+          @include changeimgsize(150px) 
+        }
+    }
+}
+
+//medium screen
+@media screen and (max-width: $medium) {
+    @include changeimgsize(100px);
+}
+// small screen
+@media screen and (max-width:$small) {
+    @include changeimgsize(50px);
+   
+    body {
+        border:none;
+    }
+}
+

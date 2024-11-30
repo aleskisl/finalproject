@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jQuery3.7.js" defer></script>
+    <script src="js/js.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alexis Langan Project</title>
+</head>
+<body>
+    <header>
+        <h2 id="user-switch">Username</h2>
+    </header>
+
+    <main>
+       
+        <section id="dicegamegeneralsection">
+            <h2>Dice Game</h2>
+            <div id="rules">
+                <h3>Rules</h3>
+                <p>
+                    Three rounds. Roll any '1's and your score for the round is 0.
+                    Roll a matching pair and your score for the round is doubled.
+                    Get the highest score out of three rounds to win the game.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="currentgamesection">
+
+            <div id="buttondiv">
+                <h3>Let's play the dice game!</h3>
+                <button id="rollbutton" name="rollbutton">Roll the dice!</button>
+                <button id="declarewinner" name="declarewinner">Declare the winner!</button>
+                <button id="resetbutton" name="resetbutton">Reset Game</button>
+            </div>
+           
+            <div id="currentgameinformation">
+                <div id="computer">
+                    <h2>Computer<span id="totalcomputerscore">:0</span></h2>
+                    <h3>Current Score</h3>
+                    <p id="computerscore"></p>
+                    <h3>Current roll</h3>
+                    
+                    <div id="computerdice" class="dicediv">
+                        <img id="computerdice1" src="images/diceno.png" alt="no dice rolled" />
+                        <img id="computerdice2" src="images/diceno.png" alt="no dice rolled" />
+                    </div>
+                </div>
+                <div id="player">
+                    <h2>Player<span id="totalplayerscore">:0</span></h2>
+                    <h3>Current Score</h3>
+                    <p id="playerscore"></p>
+                    <h3>Current roll</h3>
+                    <div id="playerdice" class="dicediv">
+                        <img id="playerdice1" src="images/diceno.png" alt="no dice rolled" />
+                        <img id="playerdice2" src="images/diceno.png" alt="no dice rolled" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            email me: <a href="mailto:alangan1@my.bcit.ca">alangan1@my.bcit.ca</a>
+        </p>
+        <p>
+            COMP2132
+        </p>
+    </footer>
+</body>
+</html>
